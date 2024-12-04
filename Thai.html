@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<script src="script.js"></script>
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thai Drama.Our Drama </title>
+</head>
+<style >
+	body{
+		background-color: black;
+		color: whitesmoke;
+
+	}
+
+	.img-1{
+	float: left;
+	right: 50%;
+	width: 150px;
+	height: 200px;
+	padding-left: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+	button{
+		background-color:white;
+		color: black;
+		border-radius: 12px;
+		font-size:15px ;
+
+	}
+	.d-1{
+	background-color: whitesmoke;
+	color: black;
+	background-size: 10000px;
+	height: 3300px;
+}
+h1{
+	padding-top:40px;
+
+}
+
+.t-1{
+        margin-left:50px;
+        font-family: 'Baskervville SC';
+		font-size: 30px;
+		color:rgb(230, 0, 0);
+
+       }
+       
+        .b-1{
+        margin-top: 30px;
+        margin-left: 50px;
+background-color:white;
+color: black;
+border-radius: 12px;
+                font-size:15px ;
+                border: none;
+
+       }
+
+
+       .d-3{
+       	margin-left: 125px;
+		margin-right: 45px;
+		margin-top: 30px;
+		margin-bottom: 40px;
+display: flex;
+gap: 10px; 
+width: 80%;
+height: 450px;
+justify-content: center;    
+	}
+	.d-3 img{
+		width: 14%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 10px;
+		transition: all ease-in-out 0.5s;
+	}
+	.d-3 img:hover{
+		width: 25%;}
+
+
+		.title1 {
+			color:whitesmoke;
+            font-family: 'Dancing Script';
+            font-size: 30px;
+
+
+		}
+		li,ul{
+		display: inline-block;
+	}
+
+	.sb{
+		background-color: whitesmoke;
+		color: black;
+        width: 300px;
+        height: 5px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+        margin-top: 0px;
+        margin-right: 60px;
+        margin-left: 140px;
+
+	}
+	input{
+		width: 210px;
+		border: none;
+		outline: none;
+		background: none;
+		font-size: 12px;
+	}
+	 .s{
+	 	width: 18px;
+	 	height: 23px;
+	 }
+	 .main{
+		display: flex;
+		margin-left: 10px;
+	 }
+
+.card{
+	width: 200px;
+	height: 260px;
+    overflow: hidden;
+	position: relative;
+   margin-left: 9px;
+
+}
+.card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.card-text{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right:-100%;
+	position: absolute;
+	backdrop-filter: blur(3px);
+	border-radius: 5px;
+    color:rgb(255, 255, 255);
+	
+}
+.card:hover .card-text{
+	right: 0;
+}
+.t1{
+    font-size: 22px;
+    padding-left: 15px;
+
+}
+.st{
+	font-size: 16px;
+    padding-left: 15px;
+
+}
+.card-bt{
+	color: black;
+	background:  rgb(255, 255, 255);
+	margin-left: 10px;
+	border-radius: 9px;
+	text-transform: capitalize;
+	border: none;
+	outline: none;
+	padding: 5px;
+	font-weight: 10px;
+	cursor: pointer;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px); /* Adjust item width */
+  grid-auto-flow: column;
+  overflow-x: auto;
+  gap: 10px; /* Adjust item margin */
+}
+
+.ml{
+  position: relative;
+  display: inline-block;
+}
+
+.ml::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f00b0b; /* Underline color */
+  transition: width 0.5s ease-in-out;
+}
+
+.ml:hover::after {
+  width: 100%;
+  height: 2px;
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px); /* Adjust item width */
+  grid-auto-flow: column;
+  overflow-x: auto;
+  gap: 10px; /* Adjust item margin */
+}
+</style>
+<body>
+	<nav>
+		<ul>
+		  <li><a href="C:\Users\M.Dhanalakshmi\Desktop\Drama review\login.html"><button class="b-1">Log in</button></a></li>
+		  <li><a href=><button class="b-1">Sign in</button></a></li>
+		  <li >
+			<div class="sb">
+			  <input type="text" id="search" placeholder="Search Your Drama" >
+			  <img class="s" onclick="search()" src=search.png>
+			</div></li>
+		  <li><h2 class="t-1">Our Drama</h2></li>
+		<li class="ml" style="margin-left: 100px;"><p style="font-size:20px; "><a style="text-decoration: none; color: whitesmoke;" href="Introdrama.html"><h3  > Home</h3></a></p></li>
+		<br>
+		</ul>
+	  </nav>
+
+<div class="d-3">
+	<img src="ga7.jpg" width="200px" height="400p"> 
+<img src="mr1.jpg" width="200px" height="400p"> 
+<img src="f.jpg" width="200px" height="400p">
+ <img src="hl1.jpg"width="300px" height="400p"> 
+ <img src="girlfriend.jpg" width="200px" height="400p"> 
+  <img src="fd1.jpg" width="200px" height="400p">
+   <img src="putonmy.jpg"> 
+</div>
+   
+   <br><br>
+   <h2 style="margin-left: 15px; font-family: 'Times New Roman', Times, serif;"> New Drama</h2>
+   
+   <div class="main"> 
+	<div class="card">
+      <img class="card-img" src="fl.jpg">
+      <div class="card-text">
+        <p class="t1">
+         <b>Faceless Love</b>
+        </p>
+        <p class="st">
+         Veekij, a stoic CEO with face blindness, hires Mirin as his assistant to help him navigate the world, hoping for a cure.
+        </p>
+        <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+      </div>
+     </div>
+	  
+		<div class="card">
+			<img class="card-img" src="sl.jpg">
+			<div class="card-text">
+			  <p class="t1">
+		  <b>Amidst a Snowstorm of Love</b>
+			  </p>
+			  <p class="st">
+				Billiards prodigy Yin Guo and Lin Yi Yang bond during a snowstorm, reigniting Yi Yang's passion for the sport.
+			  </p>
+			  <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+			</div>
+		   </div>
+		   <div class="card">
+			<img class="card-img" src="tr.jpg">
+			<div class="card-text">
+			  <p class="t1">
+				 <b>The Tale of Rose</b>
+			  </p>
+			  <p class="st">
+				Huang Yimei, born into a well-educated family, becomes a renowned artist, navigating love, marriage, and ultimately starting her own business.
+			  </p>
+			 
+			  <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+			</div>
+		   </div>
+	  
+	  
+		<div class="card">
+		 <img class="card-img" src="pr3.jpg">
+		 <div class="card-text">
+		   <p class="t1">
+	   <b>The Princess Royal</b>
+		   </p>
+		   <p class="st">
+			A princess and her husband, after a loveless marriage ending in betrayal, wake up as 18-year-olds and seek to understand how their relationship unraveled.
+		   </p>
+		   <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 </div>
+		</div>
+		<div class="card">
+		 <img class="card-img" src="pp1.jpg">
+		 <div class="card-text">
+		   <p class="t1">
+			<b>Present, Is Present</b>
+		   </p>
+		   <p class="st">
+			Wei Zi Qi (Fan Zhi Xin), the carefree heir of a wealthy family, finds himself in a fierce power struggle to gain control of his father's firm.
+		   </p>
+		   <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 </div>
+		</div>
+		<div class="card">
+			<img class="card-img" src="eol.jpg">
+			<div class="card-text">
+			  <p class="t1">
+			  <b> Everyone Loves Me</b>
+			  </p>
+			  <p class="st">
+			   A young woman reveals her crush on a classmate - only to be rejected. But love may still find a way when her gaming skills capture his attention.
+			  </p>
+			  <a href="my demon.html"><button class="card-bt">Review</button></a>
+			</div>
+		   </div>
+	  </div>
+	  <h2 style="margin-left: 15px; font-family: 'Times New Roman', Times, serif;"> Romantic Drama</h2>
+   
+   <div class="main"> 
+	  <div class="card">
+		 <img class="card-img" src="find.jpg">
+		 <div class="card-text">
+		   <p class="t1">
+			<b> Find Yourself</b>
+		   </p>
+		   <p class="st">
+			Career woman He Fan Xing falls in love with her younger colleague Yuan Song, facing dismissive remarks and work-related challenges.
+		   </p>
+		   <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 </div>
+		</div>  
+	  
+		<div class="card">
+			<img class="card-img" src="maidr.jpg">
+			<div class="card-text">
+			  <p class="t1">
+				<b>Maid's Revenge</b>
+			  </p>
+			  <p class="st">
+			   After her family is killed, Dong Tingyao is forced to serve military governor Tian Yi, who she believes is responsible for her father's death.
+			  </p>
+			  <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+			</div>
+		   </div>
+	  
+	  
+	  <div class="card">
+	   <img class="card-img" src="fall2.jpg">
+	   <div class="card-text">
+		 <p class="t1">
+		  <b> Fall in Love</b> 
+		 </p>
+		 <p class="st">
+			In 1926 Shanghai, Mu Wan Qing uncovers dark family secrets while navigating love, loyalty, and chaos with the help of powerful allies.
+		 </p><a href="my demon.html"><button class="card-bt">Review</button></a>
+	   </div>
+	  </div>
+	  <div class="card">
+		 <img class="card-img" src="angel.jpg">
+		 <div class="card-text">
+		   <p class="t1">
+			 <b>Angels Fall Sometimes</b>
+		   </p>
+		   <p class="st">
+			Lin Tuo and An Zhi Que fall in love at first sight during a summer internship event and face the transition from university life to the real world as graduation nears.
+		   </p>
+		   <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 </div>
+		</div>
+		<div class="card">
+		 <img class="card-img" src="lan4.jpg">
+		 <div class="card-text">
+		   <p class="t1" >
+	   <b>Love at Night</b>
+		   </p>
+		   <p class="st">
+			
+			Xu Qing You decides to start her life anew after discovering that her fiance cheated on her.
+		   </p>
+		   <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 </div>
+		</div>
+		<div class="card">
+		 <img class="card-img" src="ol3.jpg">
+		 <div class="card-text">
+		   <p class="t1">
+			<b>Only for Love </b>
+		   </p>
+		   <p class="st">
+			Zheng Shu Yi is a hard-working reporter for one of China's leading financial newspapers. Shi Yan, the businessman, is looking to make a series of investments.
+		   </p>
+		   <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 </div>
+		</div>
+	   
+	  </div>
+   
+	  <h2 style="margin-left: 15px; font-family: 'Times New Roman', Times, serif;">Popular High School Drama</h2>
+   
+	  <div class="main"> 
+	    <div class="card">
+			<img class="card-img" src="i fly3.jpg">
+			<div class="card-text">
+			  <p class="t1">
+			   <b>When I Fly Towards You</b> 
+			  </p>
+			  <p class="st">
+				 In autumn 2012, cheerful transfer student Su Zai Zai falls in love at first sight with the aloof Zhang Lu Rang on her first day at Yucai Middle School.
+			  </p><a href="my demon.html"><button class="card-bt">Review</button></a>
+			</div>
+		   </div>
+	   
+	   <div class="card">
+		<img class="card-img" src="os1.jpg">
+		<div class="card-text">
+		  <p class="t1">
+			 <b>Our Secret</b>
+		  </p>
+		  <p class="st">
+			Ding Xian and Zhou Si Yue's unlikely bond in high school blossoms into a lifelong love as they grow together through youth.
+		  </p>
+		  <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 
+		</div>
+	   </div>
+	   
+	   
+	   <div class="card">
+		<img class="card-img" src="m1.jpg">
+		<div class="card-text">
+		  <p class="t1">
+		   <b>Meteor Garden</b> 
+		  </p>
+		  <p class="st">
+			Dong Shancai faces bullying from four arrogant boys at university but ultimately forms a strong bond with them.
+		  </p><a href="my demon.html"><button class="card-bt">Review</button></a>
+		</div>
+	   </div>
+	   <div class="card">
+		  <img class="card-img" src="river3.jpg">
+		  <div class="card-text">
+			<p class="t1">
+			  <b>A River Runs Through It</b>
+			</p>
+			<p class="st">
+				Transfer student Xia Xiaoju navigates new friendships and challenges as she and her classmates face the pressures of the upcoming gaokao exams. 
+			</p>
+			<a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		  </div>
+		 </div>
+		 <div class="card">
+		  <img class="card-img" src="wwwy1.jpg">
+		  <div class="card-text">
+			<p class="t1">
+		<b>When We Were Young</b>
+			</p>
+			<p class="st">
+				Hua Biao accidentally blows up the lab during an experiment, injuring Yang Xi and preventing her from competing in a crucial race for college exam points.
+			</p>
+			<a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		  </div>
+		 </div>
+		 <div class="card">
+		  <img class="card-img" src="little2.jpg">
+		  <div class="card-text">
+			<p class="t1">
+			 <b> A Little Thing Called First Love </b>
+			</p>
+			<p class="st">
+				A young woman devotes herself to the study of music in the hopes of inspiring her best friend who abandoned a composition he was working on.
+			</p>
+			<a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		  </div>
+		 </div>
+		
+	   </div>
+	   <h2 style="margin-left: 15px; font-family: 'Times New Roman', Times, serif;"> Most Watched Drama</h2>
+   
+   <div class="main"> 
+	  <div class="card">
+		 <img class="card-img" src="life.jpg">
+		 <div class="card-text">
+		   <p class="t1">
+			<b>Joy of Life</b>
+		   </p>
+		   <p class="st">
+			The son of an imperial consort survives a bloody coup that puts a new, tyrannical emperor on the throne, and he grows up into a revolutionary bent on revenge.
+		   </p>
+		   <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 </div>
+		</div>  
+	  
+	 
+	  
+	  
+	  <div class="card">
+	   <img class="card-img" src="gya2.jpg">
+	   <div class="card-text">
+		 <p class="t1">
+		  <b> You Are My Glory</b> 
+		 </p>
+		 <p class="st">
+			An actress and her former high school classmate unexpectedly reunite in an online game.
+		 </p><a href="my demon.html"><button class="card-bt">Review</button></a>
+	   </div>
+	  </div>
+	  <div class="card">
+		 <img class="card-img" src="c3.jpg">
+		 <div class="card-text">
+		   <p class="t1">
+			 <b>Crush</b>
+		   </p>
+		   <p class="st">
+			College senior Sang Wu Yan falls in love with Su Nian Qin, only to later discover he is visually impaired.
+		   </p>
+		   <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 </div>
+		</div>
+		<div class="card">
+		 <img class="card-img" src="ul1.jpg">
+		 <div class="card-text">
+		   <p class="t1">
+	   <b>Unforgettable Love</b>
+		   </p>
+		   <p class="st">
+			He Qiao Yan, a reserved CEO, and Qin Yi Yue, an optimistic psychologist, gradually fall in love as their paths cross.
+		   </p>
+		   <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 </div>
+		</div>
+		<div class="card">
+			<img class="card-img" src="go.jpg">
+			<div class="card-text">
+			  <p class="t1">
+				 <b>Go Ahead</b>
+			  </p>
+			  <p class="st">
+			   Ling Xiao, He Zi Qiu, and Li Jian Jian, who grew up as siblings despite dysfunctional families, reunite years later to confront their past.
+			  </p>
+			 
+			  <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+			</div>
+		   </div>
+		<div class="card">
+		 <img class="card-img" src="ls4.jpg">
+		 <div class="card-text">
+		   <p class="t1">
+			<b>Love is Sweet</b>
+		   </p>
+		   <p class="st">
+			Jiang Jun joins a top investment firm to fulfill her father's wish, only to find her childhood friend Yuan Shuai now a rival
+		   </p>
+		   <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+		 </div>
+		</div><br><br>
+	    <hr>
+     <footer>
+      <center>
+      <h2>Contact</h2>
+      <a href="https://www.instagram.com/our_drama_review?igsh=MnFoa2drdm5zeWlm"> <img src="ins.jpg" height="50px" width="50px"></a>
+      <a href="https://pin.it/3NMPNtNMs"><img src="p.jpg" height="50px" width="50px"></a>
+     <a href="ourdramareview@gmail.com"><img src="mail.jpg" height="45px" width="50px"></a>
+     </center>
+    </footer>
+
+</body>
+</html>
+FadeIn animation
+DoorCloseLeft animation
+<div class="sb">
+	<form action="" class="searchbar"></form>
+	<input type="text" id="search" placeholder="Search Your Drama" >
+   <button type="submit"><img class="s" onclick="search()" src=search.png></button>
+  </div>
+  .sb{
+	border-style: solid;
+	border-color: whitesmoke ;
+	color: black;
+	width: 290px;
+	height: 5px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 13px;
+	margin-top: 0px;
+	margin-right: 80px;
+	margin-left: 190px;
+	font-family: 'Times New Roman', Times, serif;
+	color: whitesmoke;
+	background-color: black;
+}
+input{
+	width: 210px;
+	border: none;
+	outline: none;
+	background-color:black;
+	font-size: 12px;
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+}

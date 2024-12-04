@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<script src="script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+		background-color: black;
+		color: whitesmoke;
+
+	}
+
+	.img-1{
+	float: left;
+	right: 50%;
+	width: 150px;
+	height: 200px;
+	padding-left: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+	button{
+		background-color:white;
+		color: black;
+		border-radius: 12px;
+		font-size:15px ;
+
+	}
+	.d-1{
+	background-color: whitesmoke;
+	color: black;
+	background-size: 10000px;
+	height: 3300px;
+}
+h1{
+	padding-top:40px;
+
+}
+
+.t-1{
+        margin-left:50px;
+        font-family: 'Baskervville SC';
+		font-size: 30px;
+		color:rgb(230, 0, 0);
+
+       }
+       
+        .b-1{
+        margin-top: 30px;
+        margin-left: 50px;
+background-color:white;
+color: black;
+border-radius: 12px;
+                font-size:15px ;
+                border: none;
+
+       }
+
+
+       .d-3{
+       	margin-left: 125px;
+		margin-right: 45px;
+		margin-top: 30px;
+		margin-bottom: 40px;
+display: flex;
+gap: 10px; 
+width: 80%;
+height: 450px;
+justify-content: center;    
+	}
+	.d-3 img{
+		width: 14%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 10px;
+		transition: all ease-in-out 0.5s;
+	}
+	.d-3 img:hover{
+		width: 25%;}
+
+
+		.title1 {
+			color:whitesmoke;
+            font-family: 'Dancing Script';
+            font-size: 30px;
+
+
+		}
+		li,ul{
+		display: inline-block;
+	}
+
+	.sb{
+		background-color: whitesmoke;
+		color: black;
+        width: 300px;
+        height: 5px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+        margin-top: 0px;
+        margin-right: 60px;
+        margin-left: 140px;
+
+	}
+	input{
+		width: 210px;
+		border: none;
+		outline: none;
+		background: none;
+		font-size: 12px;
+	}
+	 .s{
+	 	width: 18px;
+	 	height: 23px;
+	 }
+	 .main{
+		display: flex;
+		margin-left: 10px;
+	 }
+
+.card{
+	width: 200px;
+	height: 260px;
+    overflow: hidden;
+	position: relative;
+   margin-left: 9px;
+
+}
+.card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.card-text{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right:-100%;
+	position: absolute;
+	backdrop-filter: blur(3px);
+	border-radius: 5px;
+    color:rgb(255, 255, 255);
+	
+}
+.card:hover .card-text{
+	right: 0;
+}
+.t1{
+    font-size: 22px;
+    padding-left: 15px;
+
+}
+.st{
+	font-size: 16px;
+    padding-left: 15px;
+
+}
+.card-bt{
+	color: black;
+	background:  rgb(255, 255, 255);
+	margin-left: 10px;
+	border-radius: 9px;
+	text-transform: capitalize;
+	border: none;
+	outline: none;
+	padding: 5px;
+	font-weight: 10px;
+	cursor: pointer;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px); /* Adjust item width */
+  grid-auto-flow: column;
+  overflow-x: auto;
+  gap: 10px; /* Adjust item margin */
+}
+
+.ml{
+  position: relative;
+  display: inline-block;
+}
+
+.ml::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f00b0b; /* Underline color */
+  transition: width 0.5s ease-in-out;
+}
+
+.ml:hover::after {
+  width: 100%;
+  height: 2px;
+}
+
+</style>
+<body>
+    <nav>
+        <ul>
+          <li><a href="C:\Users\M.Dhanalakshmi\Desktop\Drama review\login.html"><button class="b-1">Login</button></a></li>
+          <li><a href=><button class="b-1">SignIn</button></a></li>
+          <li >
+            <div class="sb">
+              <input type="text" id="search" placeholder="Search Your Drama" >
+              <img class="s" onclick="search()" src=search.png>
+            </div></li>
+          <li><h2 class="t-1">Our Drama</h2></li>
+        <li class="ml" style="margin-left: 100px;"><p style="font-size:20px; "><a style="text-decoration: none; color: whitesmoke;" href="Introdrama.html"><h3 >Home</h3></a></p></li>
+        <br>
+      </nav>
+    </ul>
+    
+    <br><h2 class="title1";>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Movie</h2><br> 
+    <div class="d-3"><img src="C:\Users\M.Dhanalakshmi\Desktop\Drama review\1724426067562.jpg"width="200px" height="400p"> 
+    <img src="WATER.jpg" width="200px" height="400p"> <img src="C:\Users\M.Dhanalakshmi\Desktop\Drama review\1722336746023.jpg" width="200px" height="400p"> <img src="C:\Users\M.Dhanalakshmi\Desktop\Drama review\1720868981154.jpg"width="200px" height="400p"> <img src="TG.jpg"width="200px" height="400p"> <img src="C:\Users\M.Dhanalakshmi\Desktop\Drama review\1720877405169.jpg"width="200px" height="400p"><img src="BP.jpg"width="200px" height="400p">
+    </div><br><br>
+    <h2 style="margin-left: 15px; font-family: 'Times New Roman', Times, serif;"> Top Movie</h2>
+    
+    <div class="main"> 
+       <div class="card">
+          <img class="card-img" src="Love next door.jpg">
+          <div class="card-text">
+            <p class="t1">
+             <b>Love Next Door</b>
+            </p>
+            <p class="st">
+             Love Next Door follows a successful woman who returns to Korea from her perfect life abroad, reuniting with her childhood best friend, a top architect.
+            </p>
+            <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+          </div>
+         </div>  
+       
+       <div class="card">
+        <img class="card-img" src="lovely run.jpg">
+        <div class="card-text">
+          <p class="t1">
+             <b>Lovely Runner</b>
+          </p>
+          <p class="st">
+           Im Sol is transported 15 years into the past, determined to change the fate of her idol, Ryu Sun-jae, after his tragic accident.
+          </p>
+          <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+         
+        </div>
+       </div>
+       
+       
+       <div class="card">
+        <img class="card-img" src="md.jpg">
+        <div class="card-text">
+          <p class="t1">
+           <b>My Demon</b> 
+          </p>
+          <p class="st">
+           When Jung Koo Won loses his powers, he teams up with his adversary, heiress Do Do Hee, sparking tension and romance on their journey to restore them.
+          </p><a href="my demon.html"><button class="card-bt">Review</button></a>
+        </div>
+       </div>
+       <div class="card">
+          <img class="card-img" src="queer.jpg">
+          <div class="card-text">
+            <p class="t1">
+              <b>Queen Tears</b>
+            </p>
+            <p class="st">
+              The queen of department stores and the prince of supermarkets weather a marital crisis, until love miraculously begins to bloom again.
+            </p>
+            <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+          </div>
+         </div>
+         <div class="card">
+          <img class="card-img" src="mq.jpg">
+          <div class="card-text">
+            <p class="t1">
+        <b>Mr .Queen</b>
+            </p>
+            <p class="st">
+              A successful and free-spirited chef finds himself in a strange situation when he wakes up in the body of Queen Cheorin in the Joseon period.
+            </p>
+            <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+          </div>
+         </div>
+         <div class="card">
+          <img class="card-img" src="marry.jpg">
+          <div class="card-text">
+            <p class="t1">
+             <b> marry my husband</b>
+            </p>
+            <p class="st">
+             After being murdered by her husband and best friend, a woman travels back in time to alter her fate and seek revenge.
+            </p>
+            <a href="lovely runner.html"><button class="card-bt">Review</button></a>
+          </div>
+         </div>
+        
+       </div> <br><br>
+       <hr>
+       <footer>
+        <center>
+        <h2>Contact</h2>
+        <a href="https://www.instagram.com/our_drama_review?igsh=MnFoa2drdm5zeWlm"> <img src="ins.jpg" height="50px" width="50px"></a>
+        <a href="https://pin.it/3NMPNtNMs"><img src="p.jpg" height="50px" width="50px"></a>
+       <a href="ourdramareview@gmail.com"><img src="mail.jpg" height="45px" width="50px"></a>
+       </center>
+      </footer>
+</body>
+</html>
